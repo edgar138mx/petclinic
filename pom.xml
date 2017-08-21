@@ -13,6 +13,7 @@
     <version>1.5.4.RELEASE</version>
   </parent>
   <name>petclinic</name>
+  <packaging>war</packaging>
 
   <properties>
 
@@ -206,6 +207,14 @@
           </dependency>
         </dependencies>
       </plugin>
+	   <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <warName>petclinic</warName>
+                </configuration>
+       </plugin>
     </plugins>
   </build>
   <reporting>
